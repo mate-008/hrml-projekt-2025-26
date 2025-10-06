@@ -37,8 +37,14 @@ article {
     height: 950px;
     margin-top: 20px;
     margin-right: auto;
-    background-color: white;
     margin-left: auto;
+    background-color: white;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    
 }
 
 footer {
@@ -57,11 +63,13 @@ footer {
 }
 #banner-content {
     text-align: center;
+    margin-top: 55px;
 }
 
 #banner-content a {
     text-decoration: none;
     color: orange;
+    
 }
 
 #logo {
@@ -107,4 +115,10 @@ h2 {
 #menu ul li:hover > ul a
 {
     display: block;
+}
+
+article img
+{
+    float: left;
+    margin-right: 20px;
 }

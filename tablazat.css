@@ -1,0 +1,46 @@
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1.1em;
+}
+
+
+table thead {
+  background-color: #ffcc00;
+  color: #111;
+}
+
+table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 700;
+}
+
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+
+table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+
+table tbody tr:hover {
+  background-color: #ffe680;
+  transition: 0.2s;
+}

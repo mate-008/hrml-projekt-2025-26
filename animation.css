@@ -1,66 +1,90 @@
-.heart
-{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    transform: rotate(45deg) translate(10px, 10px);
-    animation: ani 1s ease-in-out infinite;
+
+
+.animation-article {
+  height: 500px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-#center
-{
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
+.animation-area {
+  width: 100%;
+  flex: 1;
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.heart:before
-{
-    content:'';
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: -50px;
-    left: 0px;
-    border-radius: 50%;
+
+.road {
+  width: 90%;
+  height: 70px;
+  background-color: #333;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
-.heart:after
-{
-    content:'';
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
-    border-radius: 50%;
+
+.road::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #fff 0,
+    #fff 40px,
+    transparent 40px,
+    transparent 80px
+  );
 }
 
-@keyframes ani
-{
-    0%{
-        transform: rotate(45deg) translate(10px, 10px) scale(1.0); 
-    }
-    25%{
-        transform: rotate(45deg) translate(10px, 10px) scale(1.0); 
-    }
-    30%{
-        transform: rotate(45deg) translate(10px, 10px) scale(2.0); 
-    }
-    50%{
-        transform: rotate(45deg) translate(10px, 10px) scale(1.2); 
-    }
-    70%{
-        transform: rotate(45deg) translate(10px, 10px) scale(2.0); 
-    }
-    90%{
-        transform: rotate(45deg) translate(10px, 10px) scale(1.0); 
-    }
-    100%{
-        transform: rotate(45deg) translate(10px, 10px) scale(1.0); 
-    }
+
+.car {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  border-radius: 10px 10px 5px 5px;
+  position: absolute;
+  bottom: 15px;
+  left: -120px;
+  animation: drive 6s linear infinite, pulse 1.5s ease-in-out infinite;
 }
+
+
+.car::before,
+.car::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: black;
+  border-radius: 50%;
+  bottom: -12px;
+}
+
+.car::before { left: 12px; }
+.car::after { right: 12px; }
+
+
+@keyframes drive {
+  0%   { left: -120px; }
+  100% { left: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>11a2 HTML-PROJECT-2026</title>
+
+    <style>
+        table,
+        th,
+        td
+        {
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-collapse: collapse;
+        }
+        
+        th
+        {
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+        }
+
+        .table-container
+        {
+            width: 650px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        table tr:nth-child(2)
+        {
+            background-color: lightcyan
+        }
+
+        table td:nth-child(4)
+        {
+            background-color: darkgrey;
+            color: white;
+        }
+
+        table tr:hover 
+        {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        table tr .lakcim
+        {
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/premo.png" alt="Premo logo" width="190" title="Premo logo"></a>
+        </div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="11a HTML PROJECT 2026">11a HTML PROJECT 2026</h1>
+            </a>
+            <h2>&#171;HEADER&#187;</h2>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <h2>&#171;NAV&#187;</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">FŐOLDAL</a></li>
+                    <li><a href="#nogo">HTML DEMO</a>
+                        <ul>
+                            <li><a href="animation.html">CSS ANIMACIO</a>
+                            <li><a href="form.html">HTML URLAP</a>
+                            <li><a href="table.html">HTML TABLAZAT</a></li>
+                            <li><a href="gallery.html">KEPGALERIA</a></li>
+                            <li><a href="media.html">MEDIA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>&#171;Section&#187;</h2>
+            <article>
+                <h2>&#171;HTML Tablazat&#187;</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Név</th>
+                                <th>Foglalkozás</th>
+                                <th>Lakcím</th>
+                                <th>Telefonszám</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Gipsz Jakab</td>
+                                <td>programozó</td>
+                                <td>Pék utca 10.</td>
+                                <td>111-222</td>
+                                <td>gipsz.jakab@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Joe Doe</td>
+                                <td>web developer</td>
+                                <td>Baker Street 10.</td>
+                                <td>222-333</td>
+                                <td>joe.doe@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Hapci Marci</td>
+                                <td>tanar</td>
+                                <td class="lakcim">Foter 10.</td>
+                                <td>333-444</td>
+                                <td>hapci.marci@email.com</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Bél Flóra</td>
+                                <td>gasztroenterológus</td>
+                                <td>Vak Béla utca 1.</td>
+                                <td>444-555</td>
+                                <td>bel.flora@email.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h2>Petrovics Máté</h2>
+
+        <h2>&#169; 2025/2026 | All Rights Reserved. </h2>
+    </footer>
+
+</body>
+
+</html>

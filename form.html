@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>11a2 HTML-PROJECT-2026 HTML URLAP</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/premo.png" alt="Premo logo" width="190" title="Premo logo"></a>
+        </div>
+        <div id="banner-content">
+            <a href="index.html">
+                <h1 title="11a HTML PROJECT 2026">11a HTML PROJECT</h1>
+            </a>
+            <h2>&#171;HEADER&#187;</h2>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <h2>&#171;NAV&#187;</h2>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">FŐOLDAL</a></li>
+                    <li><a href="#nogo">HTML DEMO</a>
+                        <ul>
+                            <li><a href="animation.html">CSS ANIMACIO</a>
+                            <li><a href="form.html">HTML URLAP</a>
+                            <li><a href="table.html">HTML TABLAZAT</a></li>
+                            <li><a href="gallery.html">KEPGALERIA</a></li>
+                            <li><a href="media.html">MEDIA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>&#171;SECTION&#187;</h2>
+            <article>
+                <h2>&#171;HTML URLAP&#187;</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Megrendelo adatai</legend>
+                        <p><label for="nev">Nev: <input type="text" name="nev" id="nev"
+                                    placeholder="nev megadasa..." required></label>
+                            <small>Vezeteknev Keresztnev</small>
+                        </p>
+                        <p>
+                            <label for="telefon">Telefon: <input type="tel" name="telefon" id="telefon" size="17"
+                                    placeholder="telefonszam megadasa" required></label>
+                        </p>
+                        <p><label for="cim">Kiszallitasi cim: <input type="text" name="cim" id="cim" placeholder="ide kerem..." required></label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>A pizza merete</legend>
+                        <p><label for=""><input type="radio" name="meret" value="kicsi" checked>kicsi</label></p>
+                        <p><label for=""><input type="radio" name="meret" value="nagy" >nagy</label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Feltetek</legend>
+                        <p><label for=""><input type="checkbox" name="feltet1" value="sonka" checked>sonka</label></p>
+                        <p><label for=""><input type="checkbox" name="feltet2" value="sajt">sajt</label></p>
+                        <p><label for=""><input type="checkbox" name="feltet3" value="gomba">gomba</label></p>
+                    </fieldset>
+                    <p><label for="">Mennyiség: <input type="number" name="mennyiseg"></label></p>
+                    <p><label for="">Kert kiszallitasi ido: <input type="date" name="kiszallitas"></label></p>
+                    <p><label for="egyeb">Egyeb kivansagok: <br><textarea name="egyeb" id="egyeb"></textarea></label>
+                    </p>
+                    <button type="reset">Alaphelyzet</button>
+                    <button type="submit">Elkuldes</button>
+                </form>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h2>Petrovics Máté</h2>
+
+        <h2>&#169; 2025/2026 | All Rights Reserved. </h2>
+    </footer>
+
+</body>
+
+</html>
